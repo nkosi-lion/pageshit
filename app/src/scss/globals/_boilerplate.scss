@@ -8,16 +8,26 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     font-family: util.$fontd;
-    line-height: 1.7rem;
+    line-height: 3.4rem;
     text-wrap: wrap;
-    width: 15rem;
+    width: 22rem;
     padding-bottom: 1rem;
     padding-top: 1.4rem;
     
 }
+h1::before {
+    content: "";
+    margin: 0;
+    display: block;
+    height: 1.4rem;
+    width: 6.5rem;
+    background-color: var(--dark-purple);
+    border-top: 0.02rem solid var(--white);
+}
+
 h2 {
     font-size: 1.7rem;
     font-weight: 400;
@@ -43,18 +53,20 @@ nav {
 }
 
 .human {
-    background-color: var(--purple);
+    background-color: var(--dark-purple);
     color: var(--white);
     font-family: util.$fontk;
-    font-size: .7rem;
+    font-size: .67rem;
     font-weight: 100;
+    line-height: 1rem;
     height: 30rem;
     padding-left: 4rem;
     padding-top: 3.6rem;
+
 }
 
 .containern{
     margin:0;
-    width: 20rem;
+    width: 23.5rem;
     
 }
