@@ -1,0 +1,60 @@
+@use '../util/' as util;
+
+
+body {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: util.$fontd;
+    line-height: 1.7rem;
+    text-wrap: wrap;
+    width: 15rem;
+    padding-bottom: 1rem;
+    padding-top: 1.4rem;
+    
+}
+h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: util.$fontd;
+    
+}
+h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: util.$fontd;
+    
+}
+h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: util.$fontd;
+    
+}
+nav {
+    font-family: util.$fontk;
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.human {
+    background-color: var(--purple);
+    color: var(--white);
+    font-family: util.$fontk;
+    font-size: .7rem;
+    font-weight: 100;
+    height: 30rem;
+    padding-left: 4rem;
+    padding-top: 3.6rem;
+}
+
+.containern{
+    margin:0;
+    width: 20rem;
+    
+}

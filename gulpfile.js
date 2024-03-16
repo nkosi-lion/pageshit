@@ -13,8 +13,8 @@ const browsersync = require('browser-sync').create();
 
 // File paths
 const files = {
-	scssPath: 'app/scss/**/*.scss',
-	jsPath: 'app/js/**/*.js',
+	scssPath: 'app/src/scss/**/*.scss',
+	jsPath: 'app/src/js/**/*.js',
 };
 
 // Sass task: compiles the style.scss file into style.css

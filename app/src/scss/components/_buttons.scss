@@ -1,0 +1,17 @@
+@use '../util/' as util;
+
+.button a {
+    border: .1rem solid var(--purple);
+    padding: .4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--purple) !important;
+}
+
+.button a:hover{
+    background-color: var(--purple);
+    color: var(--white) !important;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
