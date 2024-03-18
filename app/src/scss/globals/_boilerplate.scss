@@ -1,6 +1,8 @@
 @use '../util/' as util;
 
 
+
+
 body {
     font-size: 1rem;
     margin: 0;
@@ -29,44 +31,44 @@ h1::before {
 }
 
 h2 {
-    font-size: 1.7rem;
-    font-weight: 400;
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 100;
     font-family: util.$fontd;
+    line-height: 3.4rem;
+    width: 22rem;
+    padding-bottom: 2rem;
+
     
+    
+}
+h2::before {
+    content: "";
+    margin: 0;
+    display: block;
+    height: 1.4rem;
+    width: 6.5rem;
+    background-color: var(--white);
+    border-top: 0.02rem solid var(--grayish-purple);
 }
 h3 {
-    font-size: 1.6rem;
+    margin: 0;
+    color: var(--white);
+    font-size: 2.5rem;
     font-weight: 400;
     font-family: util.$fontd;
-    
+    line-height: 2.5rem;
+    width: 22rem;
+
 }
 h4 {
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: .8 rem;
+    color: var(--black);
     font-size: 1.4rem;
     font-weight: 400;
     font-family: util.$fontd;
     
-}
-nav {
-    font-family: util.$fontk;
-    font-size: .7rem;
-    font-weight: 400;
-}
-
-.human {
-    background-color: var(--dark-purple);
-    color: var(--white);
-    font-family: util.$fontk;
-    font-size: .67rem;
-    font-weight: 100;
-    line-height: 1rem;
-    height: 30rem;
-    padding-left: 4rem;
-    padding-top: 3.6rem;
-
-}
-
-.containern{
-    margin:0;
-    width: 23.5rem;
     
 }

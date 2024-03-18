@@ -1,0 +1,53 @@
+@use '../util/' as util;
+
+
+.section-three {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: util.$fontk;
+    font-size: .7rem;
+    font-weight: 400;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 7.27375rem;
+    padding-bottom: 7.27375rem;
+    a {
+        text-decoration: none;
+    }
+}
+
+.snippets {
+    color: var(--grayish-purple);
+    font-family: util.$fontk;
+    font-size: .67rem;
+    font-weight: 100;
+    line-height: 1rem;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    min-width: 48rem;
+    
+}
+
+.snippet {
+    min-width: 13.39375rem;
+    flex-basis: 100%;
+}
+
+.findout {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    min-width: 48rem;
+    
+}
+
+.containeri{
+    margin: 0 0 0 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
