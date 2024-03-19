@@ -1,0 +1,69 @@
+@use '../util/' as util;
+
+.section-four {
+        background-color: var(--gray);
+        font-family: util.$fontk;
+        font-size: .67rem;
+        font-weight: 500;
+        line-height: 1rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem,;
+      
+        ul {
+            list-style-type: none;
+        }
+}
+
+.top {
+    display:flex;
+    justify-content: space-between;
+    min-width: 48rem;
+    padding-bottom: 1.7rem;
+    border-bottom: 0.02rem solid var(--grayish-purple);
+}
+.sm {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    a {
+        color: var(--grayish-purple);
+    }
+    a:hover {
+        color: var(--purple);
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+}
+
+.smlogosvg {
+    fill: currentColor;
+}
+
+
+
+.links {
+    padding-top: 1.7rem;
+    min-width: 48rem;
+    display:flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+    a {
+        text-decoration: none;
+        color: var(--purple);     
+    }
+    a:hover {
+        text-decoration: underline;
+        transition: .3s;
+    }
+    
+}
+
+.title {
+        padding-bottom: 1rem;
+        color: var(--grayish-purple);
+
+    }

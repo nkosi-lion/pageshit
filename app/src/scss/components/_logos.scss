@@ -1,5 +1,11 @@
 @use '../util/' as util;
 
 .sniplogo{
+    margin:0;
     width: 4rem;
+    height: 4rem;
+}
+
+.smlogo {
+    fill: var(--purple);
 }
