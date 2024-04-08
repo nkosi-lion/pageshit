@@ -1,15 +1,17 @@
 @use '../util/' as util;
+ 
 
-
-
-
-body {
-    font-size: 1rem;
+* {
+    padding: 0;
     margin: 0;
 }
 
+body {
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
 h1 {
-    margin: 0;
     font-size: 3rem;
     font-weight: 400;
     font-family: util.$fontd;
@@ -17,17 +19,16 @@ h1 {
     text-wrap: wrap;
     width: 22rem;
     padding-bottom: 1rem;
-    padding-top: 1.4rem;
+    padding-top: 2rem;
     
 }
 h1::before {
     content: "";
-    margin: 0;
     display: block;
-    height: 1.4rem;
     width: 6.5rem;
-    background-color: var(--dark-purple);
+    background-color: transparent;
     border-top: 0.02rem solid var(--white);
+    padding-top: 1.4rem;
 }
 
 h2 {
@@ -44,25 +45,23 @@ h2 {
 }
 h2::before {
     content: "";
-    margin: 0;
     display: block;
-    height: 1.4rem;
+    padding-top: 2rem;
     width: 6.5rem;
-    background-color: var(--white);
+    background-color: transparent;
     border-top: 0.02rem solid var(--grayish-purple);
 }
 h3 {
-    margin: 0;
+ 
     color: var(--white);
     font-size: 2.5rem;
     font-weight: 400;
     font-family: util.$fontd;
     line-height: 2.5rem;
-    width: 22rem;
 
 }
 h4 {
-    margin: 0;
+   
     padding-top: 2rem;
     padding-bottom: .8 rem;
     color: var(--black);
@@ -92,5 +91,30 @@ h4 {
         color: var(--dark-purple);
         transition: .8s ease-in-out;
         cursor: pointer;
+    }
+}
+
+@media screen and (width < 63.9rem){
+    .navbar, .section-two, .section-three, .section-four, .random {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+}
+@media screen and (width > 23.4375rem ) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: inline;
+    }
+}
+
+@media screen and (width <= 23.4375rem) {
+    .mobile {
+        display: inline;
+    }
+    .desktop {
+        display: none;
     }
 }

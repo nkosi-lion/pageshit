@@ -4,13 +4,20 @@ nav {
     font-family: util.$fontk;
     font-size: .7rem;
     font-weight: 500;
+    background-color: rgb(255, 255, 255, .95);
+    position: fixed;
+    z-index: 995;
+    width: 100%;
+    border-bottom:  var(--gray) .25rem solid;
+
 }
 
+.navlofgo {
+    margin-right: auto;
+}
 .navmenu {
-    display:flex;
-    align-items: center;
-    gap: 1rem;
-    text-transform: uppercase;
+    
+    margin-left: auto;
     a {
         text-decoration: none;
         color: var(--grayish-purple);
@@ -27,11 +34,30 @@ nav {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-left: 10rem;
     padding-right: 10rem;
-    min-width: 40rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
+}
+
+.menu {
+    list-style: none;
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+
+}
+.menu li {
+    display:flex;
+    gap: 1rem;
+}
+
+@media screen and (width < 63.97375rem ) {
+    .navbar {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }

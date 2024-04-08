@@ -37,3 +37,21 @@
     cursor: pointer;
 }
 
+.buttonc a {
+    font-weight: 500;
+    text-transform: uppercase;
+    border: .1rem solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white) !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.buttonc a:hover{
+    background-color: var(--white);
+    color: var(--purple) !important;
+    transition: .3s ease-out;
+    cursor: pointer;
+}

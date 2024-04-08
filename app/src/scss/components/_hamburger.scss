@@ -1,0 +1,57 @@
+@use  '../util/' as util;
+
+
+.toggle {
+    margin: 0;
+    border: 0;
+}
+
+.toggle-menu { 
+    padding-left: 1rem;
+    :hover {
+        cursor: pointer;
+
+    }
+
+    .closeicon {
+        z-index: 0;
+        height: 2rem;
+        display: none;
+
+        :hover{
+            box-sizing: border-box;
+            border: solid 2px var(--gray);
+            box-shadow: red;
+        }
+        
+    }
+
+    .hamburger {
+        z-index: 0; 
+        height: 2rem; 
+        :hover{
+            box-sizing: border-box;
+            border: solid 2px var(--gray);
+        }
+    }
+
+}
+
+
+
+
+
+
+.menu li:nth-child(1) {
+    display: none;
+}
+
+@media screen and (width < 80rem) {
+    .menu li:nth-child(1) {
+       display: inline;
+      }
+    .menu li:not(:first-child){
+       display: none;
+      }
+
+}
