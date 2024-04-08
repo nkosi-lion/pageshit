@@ -8,6 +8,10 @@
     flex-direction: column;
     .raw {
         background-color: var(--purple);
+        max-width: 23.4375rem;
+        img {
+            width: 100%;
+        }
     }
     .section-one-m {
         background-color: var(--purple);
@@ -69,6 +73,7 @@
         .container-2m {
             display: flex;
             flex-direction: column;
+            max-width: 23.4375rem;
             
             h3 {
                 color: var(--black);
